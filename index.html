@@ -156,6 +156,7 @@
 
   <!--------- Start of About Section --------->
 
+
   <section id="about" class="about overflow p-5">
 
     <div class="container">
@@ -166,7 +167,7 @@
 
           <div class="about-img">
 
-            <img src="imgs/daniel (1).jpg" alt="a man with a green sweater">
+            <img src="imgs/daniel-(1).png" alt="a man with a green sweater">
           </div>
         </div>
 
@@ -194,44 +195,44 @@
               <div class="item">
                 <div class="skills-progress">
                   <h6>Marketing</h6>
-                  <span data-value="99.9%" style="width: 99.9%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
                             <div class="item">
                 <div class="skills-progress">
                   <h6>PR</h6>
-                  <span data-value="99.8%" style="width: 99.8%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
                             <div class="item">
                 <div class="skills-progress">
                   <h6>Feasibility Study</h6>
-                  <span data-value="99.9%" style="width: 99.9%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
                             <div class="item">
                 <div class="skills-progress">
                   <h6>HR</h6>
-                  <span data-value="99.7%" style="width: 99.7%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
               
               <div class="item">
                 <div class="skills-progress">
                   <h6>Finance & Accounting</h6>
-                  <span data-value="99.6%" class="w-99%" style="width: 99.6%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
               <div class="item">
                 <div class="skills-progress">
                   <h6>Printings</h6>
-                  <span data-value="99.54%" style="width: 99.54%;"></span>
+                  <span  style="width: 100%;"></span>
                 </div>
               </div>
               <div class="item">
                 <div class="skills-progress">
                   <h6>Web and App Development</h6>
-                  <span data-value="99.7%" style="width: 99.7%;"></span>
+                  <span style="width: 100%;"></span>
                 </div>
               </div>
             </div>
@@ -249,14 +250,65 @@
 
   <!---------- End of About Section ---------->
 
+  
+  <!---------- Start Of Client Slider Section --------->
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scroller = document.getElementById("clientSlider");
+            const scrollerInner = scroller.querySelector(".slider-track");
+            const scrollerContent = Array.from(scrollerInner.children);
+
+            // Clone every item and append it to the end of the list
+            // This creates the "infinite" illusion
+            scrollerContent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                // Mark it as a clone just in case you need to style it differently (optional)
+                duplicatedItem.setAttribute("aria-hidden", true);
+                scrollerInner.appendChild(duplicatedItem);
+            });
+
+            // Add the animation class now that duplication is done
+            scrollerInner.classList.add("animate-scroll");
+        });
+    </script>
+
+  <!---------- End Of Client Slider Section --------->
+
 
   <!--------- Start of Services Section --------->
 
   <section id="services" class="services overflow p-5">
+    
+    
+    <h2 class="text-header text-center p-5" style="color: #4975BA;">Our Clients.</h2>
 
+        <div class="slider-container" id="clientSlider">
+        <div class="slider-track">
+            <div class="client-item"><img src="imgs/boba.png" alt=""></div>
+            <div class="client-item"><img src="imgs/nafis.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Montaza-Bay.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Kitchenz.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Pets-Plus.png" alt=""></div>
+            <div class="client-item"><img src="imgs/UMB.png" alt=""></div>
+                        <div class="client-item"><img src="imgs/3ayoush.png" alt=""></div>
+            <div class="client-item"><img src="imgs/zido.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Nexus.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Double-Face.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Puffy&Fluffy.png" alt=""></div>
+                        <div class="client-item"><img src="imgs/KRYM.png" alt=""></div>
+            <div class="client-item"><img src="imgs/dj.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Khobaraa.png" alt=""></div>
+            <div class="client-item"><img src="imgs/Pasta-bucks.png" alt=""></div>
+        </div>
+    </div>
     <div class="container">
 
-      <h2 class="text-header text-center p-5">Our Services.</h2>
+      <h2 class="text-header text-center p-5" style="color: #4975BA;">Our Services.</h2>
 
       <div class="row card-margin">
 
@@ -392,6 +444,7 @@ Custom, high-performance websites and mobile applications built to match your bu
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -1144,7 +1197,7 @@ Custom, high-performance websites and mobile applications built to match your bu
 
   <!--------- Start of Teams Section --------->
 
-  <section id="team" class="team overflow bg-light pt-5">
+  <!-- <section id="team" class="team overflow bg-light pt-5">
 
     <div class="container text-center pt-3 pb-5  px-sm-5 px-lg-0 px-xxl-5">
 
@@ -1410,7 +1463,7 @@ Custom, high-performance websites and mobile applications built to match your bu
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--------- End of Teams Section --------->
 
@@ -1436,7 +1489,7 @@ Custom, high-performance websites and mobile applications built to match your bu
             <i class="fa-solid fa-location-arrow"></i>
           </span>
 
-          <h6 class="fw-extrabold  mb-2">Address</h6>
+          <h6 class="fw-extrabold  mb-2" style="color: #DBD9CC;">Address</h6>
 
           <p class=" px-2 pb-2 size-15">
 
@@ -1451,7 +1504,7 @@ Custom, high-performance websites and mobile applications built to match your bu
             <i class="fa-solid fa-envelope"></i>
           </span>
 
-          <h6 class="fw-extrabold  mb-2">Email</h6>
+          <h6 class="fw-extrabold  mb-2" style="color: #DBD9CC;">Email</h6>
 
           <p class=" px-2 pb-2 size-15">marketing@odeonbusinessconsultancy.com</p>
         </div>
@@ -1462,7 +1515,7 @@ Custom, high-performance websites and mobile applications built to match your bu
             <i class="fa-solid fa-phone"></i>
           </span>
 
-          <h6 class="fw-extrabold  mb-2">Phone</h6>
+          <h6 class="fw-extrabold  mb-2" style="color: #DBD9CC;">Phone</h6>
 
           <p class=" px-2 pb-2  size-15">+20 011 1191 7546</p>
         </div>
@@ -1485,7 +1538,7 @@ Custom, high-performance websites and mobile applications built to match your bu
 
   <footer class="footer py-3 text-center">
     <p class="my-3">
-      Copy Right 2025 © By ODEON All Rights Reserved
+      Copy Right 2025 © By <span style="color: #4975BA;">ODEON</span> All Rights Reserved
     </p>
 
 

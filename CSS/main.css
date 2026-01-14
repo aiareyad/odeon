@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 *:not(#header):hover .navbar{
@@ -50,6 +51,11 @@
     color: #1c1c1c;
     transition: all 1s ease;
     transition-delay: 1s;
+}
+
+body{
+
+  background-color: #141414;
 }
 
 .top-icon{
@@ -161,9 +167,10 @@ body:hover .bottom-icon{
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 900;
-  color: rgb(52, 52, 52);
+  color: #4975BA;
   position: relative;
   z-index: 999;
+  
 }
 
 .contact-us::after {
@@ -172,6 +179,8 @@ body:hover .bottom-icon{
   height: 30px;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;
+
+opacity: 0.3;
   position: absolute;
   bottom: -3px;
   left: 39%;
@@ -185,7 +194,7 @@ body:hover .bottom-icon{
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 900;
-  color: rgb(52, 52, 52);
+  color: #4975BA;
   position: relative;
   z-index: 999;
 }
@@ -209,7 +218,7 @@ body:hover .bottom-icon{
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 900;
-  color: rgb(52, 52, 52);
+  color: #4975BA;
   position: relative;
   z-index: 999;
 }
@@ -218,6 +227,7 @@ body:hover .bottom-icon{
   content: ' ';
   width: 19.1%;
   height: 30px;
+  opacity: 0.3;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;
   position: absolute;
@@ -242,6 +252,7 @@ body:hover .bottom-icon{
   content: ' ';
   width: 27%;
   height: 30px;
+  opacity: 0.3;
   background-image: url(../imgs/dots.png);
   background-repeat: repeat;
   position: absolute;
@@ -583,10 +594,9 @@ body:hover .bottom-icon{
 .about-img:after {
     content: "";
     width: 80%;
-    height: 80%;
+    height: 60%;
     position: absolute;
     left: -15px;
-    bottom: -30px;
     background-image: url(../imgs/dots.png);
     background-repeat: repeat;
     z-index: 1;
@@ -605,7 +615,7 @@ body:hover .bottom-icon{
     justify-self: flex-start;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    color: #343434;
+    color: #4975BA;
     font-size: 30px;
 }
 
@@ -623,7 +633,7 @@ body:hover .bottom-icon{
 
     font-size: 15px;
     font-family: "poppins", sans-serif;
-    color: rgb(116, 129, 130);
+    color: #DBD9CC;
 }
 
 /* ------------------ Skills ------------------ */
@@ -664,7 +674,7 @@ body:hover .bottom-icon{
     height: 100%;
     width: 10%;
     border-radius: 5px;
-    background-color: #1c1c1c;
+    background-color: #4975BA;
     -webkit-transition: all 1s;
     transition: all 1s;
     width: 100%;
@@ -749,13 +759,14 @@ body:hover .bottom-icon{
     flex-direction: column;
     text-align: center;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    transition: all ease 1s;
 }
 
 .serv-item h4{
 
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    color: #343434;
+    color: #4975BA;
     font-size: 18px;
     line-height: 19.8px;
 }
@@ -766,7 +777,8 @@ body:hover .bottom-icon{
     width: 70px;
     height: 70px;
     line-height: 70px;
-    background: #f4f4f4;
+    background: #4975BA;
+    color: #fff;
     border-radius: 50%;
     transition: all 0.5s;
 }
@@ -781,6 +793,12 @@ body:hover .bottom-icon{
 
     background-color: #1c1c1c;
     color: #fff;
+    transition: all 0.5s ease;
+}
+
+.serv-item:hover h4{
+
+    color: #1c1c1c;
     transition: all 0.5s ease;
 }
 
@@ -839,7 +857,7 @@ body:hover .bottom-icon{
 
 .portfolio ul{
 
-    color: #1c1c1c;
+    color: #DBD9CC;
 }
 
 
@@ -851,6 +869,7 @@ body:hover .bottom-icon{
 .nav-item{
 
   position: relative;
+  color: #4975BA !important;
 }
 
 .nav-link{
@@ -866,7 +885,7 @@ body:hover .bottom-icon{
   outline: none !important;
   border: none !important;
   background-color: transparent !important;
-  color: #1C1C1C !important;
+  color: #4975BA !important;
 }
 
 .nav-link::after {
@@ -955,7 +974,7 @@ body:hover .bottom-icon{
   font-family: "Poppins",sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: #1C1C1C;
+  color: #d6d6d6;
 }
 
 .flex-navright{
@@ -1175,7 +1194,7 @@ button:focus{
   height: 3.75rem;
   width: 3.75rem;
   border-radius: 50%;
-  background-color: #f7f7f7;
+  background-color: #DBD9CC ;
   margin: 0 auto;
   text-align: center;
   transition: all 500ms ease;
@@ -1290,3 +1309,59 @@ textarea::placeholder{
 }
 
 /* -------------- End of Footer Section --------------- */
+
+
+/* 2. The Slider Container */
+        .slider-container {
+            width: 100%;
+            overflow: hidden; /* Hides the scrolling elements outside the box */
+            mask-image: linear-gradient(
+                to right,
+                transparent,
+                black 10%,
+                black 90%,
+                transparent
+            ); /* Creates the fade effect on edges */
+        }
+
+        /* 3. The Moving Track */
+        .slider-track {
+            display: flex;
+            gap: 2rem; /* Space between logos */
+            width: max-content; /* Ensure track is wide enough for all items */
+            padding: 1rem 0;
+            /* Animation applied by JS class later */
+        }
+
+        /* 4. The Individual Client Items */
+        .client-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #555;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+        .client-item img{
+          width: 100px;
+          height: 100px;
+        }
+
+        /* Optional: Add a pause on hover */
+        .slider-container:hover .slider-track {
+            animation-play-state: paused;
+        }
+
+        /* 5. The Animation */
+        @keyframes scroll {
+            to {
+                transform: translate(calc(-50% - 1rem)); /* Moves half the width (plus half the gap) */
+            }
+        }
+
+        /* Utility class to activate animation */
+        .animate-scroll {
+            animation: scroll 30s linear infinite;
+        }
